@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <input type="email" id="emailInput" placeholder="Email" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <button id="loginBtn">Login</button>
+        </div>
+    </div>
+
+
+    <header id="mainHeader" class="hidden">
+        <h1>Library Management System</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by title, author, or genre...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    
+    <main id="mainContent" class="hidden">
+        <section id="bookDisplay" class="book-grid"></section>
+        <section id="authorDetails" class="author-grid"></section>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>
